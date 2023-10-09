@@ -1,0 +1,155 @@
+<!--Disculpee profe, no llegue a terminarlo-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto integrador Front | Nicole Condori</title>
+        <link rel="shortcut icon" href="./persona.icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/estilos.css">
+    </head>
+    <body>
+        <header class="header">
+
+                <div class="logoTitulo">
+                    <a href="https://www.google.com/" target="_blank"> <!--ANCLA me permite que la imagen me lleve a otra pagina web (ENLACE EXTERNO). Ej: Google y "target="_blank" sirve para que me abra Google en otra pestaña y no cierre mi página"-->
+                        <img src="./assets/img/codoacodo.png" alt="Logo de codo a codo 4.0" height="100px">
+                    </a>
+                    <h2 class="tituloPincipal">Conf Bs As</h2>
+                </div>
+
+                 <nav> 
+                    <ul class="listasHeader"> 
+                        <li> <a class="colorWhite linkNav" href="#Conferencia">La conferencia</a></li>
+                        <li> <a class="colorGris linkNav" href="#Oradores">Los oradores</a></li>
+                        <li> <a class="colorGris linkNav" href="#LugarFecha">El lugar y la fecha</a></li>
+                        <li> <a class="colorGris linkNav" href="#FormularioOrador">Conviertete en orador</a></li>
+                        <li> <a class="colorVerde linkNav" href="./pages/tickets.html">Comprar tickets</a></li>
+                    </ul>
+                 </nav>
+            
+        </header>
+       
+        <main>
+            <!--las sections siempre deben tener titulo-->
+            <section id="Conferencia">
+
+                <div class="infoFondo">
+                    <h1>Conf Bs As</h1>
+                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, 
+                    a otros estudiantes de Codo a Codo y los oradores del primer nivel que tenemos para ti. Te esperamos!
+                    </p>
+                </div>
+
+                <div class="botonesFondo">
+                    <a class="fondoVacio" href="">Quiero ser Orador</a>
+                    <a class="fondoVerde" href="">Comprar tickets</a>
+                </div>
+               
+            </section>
+
+            <section id="Oradores" class="oradores">
+                <h2><div>CONOCE A LOS</div>ORADORES</h2>
+                <div class="tarjetasMain">
+                    <img src="./assets/img/steve.jpg" alt="Rostro de Steve Jobs">
+                    <div class="cuerpoTarjeta">
+                        <h4 class="colorAmarillo">JavaScript</h4>
+                        <h4 class="colorCeleste">React</h4>
+                        <h3 class="tituloNombre">Steve Jobs</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio, quidem autem assumenda sint nesciunt, quasi vero accusamus in iste explicabo voluptatem similique 
+                            at blanditiis hic odio eveniet doloremque dolorum?
+                        </p>  
+                    </div>
+                    
+                </div>
+
+                <div class="tarjetasMain">
+                    <img src="./assets/img/bill.jpg" alt="Rostro de Bill Gates">
+                    <div class="cuerpoTarjeta">
+                        <h4 class="colorAmarillo">JavaScript</h4>
+                        <h4 class="colorCeleste"> React</h4>
+                        <h3 class="tituloNombre">Bill Gates</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio, quidem autem assumenda sint nesciunt, quasi vero accusamus in iste 
+                            explicabo voluptatem similique at blanditiis hic odio eveniet doloremque dolorum? 
+                        </p>  
+                    </div>
+
+                </div>
+
+                <div class="tarjetasMain">
+                    <img src="./assets/img/ada.jpeg" alt="Rostro de Ada Lovelace">
+                    <div class="cuerpoTarjeta">
+                        <h4 class="colorGrisOsc">Negocios</h4>
+                        <h4 class="colorRojo">Starups</h4>
+                        <h3 class="tituloNombre">Ada Lovelace</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio, quidem autem assumenda sint nesciunt, quasi vero accusamus in iste 
+                            explicabo voluptatem similique at blanditiis hic odio eveniet doloremque dolorum? 
+                        </p>  
+                    </div>
+                    
+                </div>
+
+            </section>
+
+            <section id="LugarFecha">
+                <div>
+                    <img src="./assets/img/honolulu.jpg" alt="Foto de honolulu">
+                </div>
+                
+                <div>
+                    <h2> Bs As - Octubre </h2>
+                    <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales 
+                        ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu 
+                        han formado una ciudad- condado consolidada que cubre toda la ciudad (aproximadamente 600km^2 de superficie).
+                    </p>
+                    <a href="https://www.visittheusa.mx/destination/honolulu"> Conocé más </a>
+                </div>
+                
+            </section>
+
+            <section id="FormularioOrador">
+
+                <h2><div>CONVIÉRTETE EN UN</div> ORADOR</h2>
+                <p>
+                    Anótate como Orador para dar una charla ignite. Cuéntanos de qué quieres hablar!
+                </p>
+                <form action="./pages/404.html" method="get">
+                    <div> 
+                        <input type="text" id="name" name="name" placeholder="Nombre" required>
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                    </div>
+                    
+                    <div>
+                        <textarea name="comentario" id="comentario" cols="55" rows="5" placeholder="Sobre qué quieres hablar?" required></textarea>
+                    </div>
+                    <p>Recuerda incluir un titulo para tu charla </p>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </section>
+            
+            <section>
+                <h2>Encuéntrenos en: </h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.50406576683247!2d-58.37215308063851!3d-34.603339016603506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd05e21d49%3A0x6abff758614cce7e!2sC%C3%BAspide%20Libros!5e0!3m2!1ses!2sar!4v1696717306488!5m2!1ses!2sar" 
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="listasFooter ">
+                <a class="links" href="#"> Preguntas frecuentes</a>
+                <a class="links" href="#">Contáctanos</a>
+                <a class="links" href="#">Prensa</a>
+                <a class="links" href="#">Conferencias</a>
+                <a class="links" href="#">Términos y condiciones</a> 
+            </div>
+            
+        </footer>
+    </body>
+</html>

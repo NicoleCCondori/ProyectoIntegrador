@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=PT+Sans:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.colorWhite{
+    color: white;
+}
+.colorGris{
+    color:rgb(156,155,161)
+}
+.colorVerde{
+    color:rgb(41,167,68);
+}
+.colorAmarillo{
+    background-color: rgb(255,194,7);
+    color: black;
+}
+.colorCeleste{
+    background-color:rgb(23,162,183);
+    color: white;
+}
+.colorGrisOsc{
+    background-color:rgb(108,117,126);
+    color: white;
+}
+.colorRojo{
+    background-color: rgb(220,53,70);
+    color: white;
+}
+
+.header{
+    background-color: rgb(53,58,64);
+    display: flex;
+    flex-direction:row;
+}
+
+.logoTitulo h2{
+    color: white;
+    font-size: 2rem;
+}
+
+.listasHeader{
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    display: flex;
+}
+
+.linkNav{
+    text-decoration: none;
+    font-size: 1.2rem;
+    width: 10px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+
+
+.botonesFondo{
+    font-size: 1.3rem;
+    width:2px;
+    display: inline;
+    
+    .fondoVerde{
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        background-color: rgb(41,167,68);
+        border-radius: 3px;
+    }
+    .fondoVacio{
+        display: inline-block;
+        background-color: transparent;
+        text-decoration: none;
+        border-color: white;
+        border-radius: 3px;
+        color: rgba(169, 156, 156, 0.766);
+    }
+}
+
+.oradores{
+    height: 100vh; /*pantalla completa*/
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.oradores h2{
+    padding-top: 20px;
+}
+.tarjetasMain{
+    background-color: white;
+    border:1px solid rgb(182,182,182);
+    border-radius: 5px;
+    width: 30%;
+    height: 80%;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top:20px;
+    text-align: left;
+}
+.tarjetasMain img{
+    width: 100%;
+    height: 55%;
+    object-fit: contain;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+.cuerpoTarjeta{
+    margin: 10px;
+}
+.cuerpoTarjeta h4{
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 0 5px;
+}
+.tituloNombre{
+    margin-bottom: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+/*.footer{
+    height: 150px;
+    background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
+}*/
+.listasFooter{
+    background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .links{
+        text-decoration: none;
+        font-size: 1.5rem;
+        color:white;
+    }
+}
+/*
+.links{
+    display: inline;
+    display: inline-block;
+    text-decoration: none;
+
+  
+    color:white;
+    width: 100px;
+    height: 80px;
+    margin-top: 40px;
+   
+    margin-right: 50px;
+    text-align: center;
+}*/
