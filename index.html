@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="./css/estilos.css">
     </head>
     <body>
-        <header class="header">
+        <header class="encabezado">
 
                 <div class="logoTitulo">
                     <a href="https://www.google.com/" target="_blank"> <!--ANCLA me permite que la imagen me lleve a otra pagina web (ENLACE EXTERNO). Ej: Google y "target="_blank" sirve para que me abra Google en otra pestaña y no cierre mi página"-->
@@ -19,13 +19,13 @@
                     <h2 class="tituloPincipal">Conf Bs As</h2>
                 </div>
 
-                 <nav> 
-                    <ul class="listasHeader"> 
-                        <li> <a class="colorWhite linkNav" href="#Conferencia">La conferencia</a></li>
-                        <li> <a class="colorGris linkNav" href="#Oradores">Los oradores</a></li>
-                        <li> <a class="colorGris linkNav" href="#LugarFecha">El lugar y la fecha</a></li>
-                        <li> <a class="colorGris linkNav" href="#FormularioOrador">Conviertete en orador</a></li>
-                        <li> <a class="colorVerde linkNav" href="./pages/tickets.html">Comprar tickets</a></li>
+                 <nav class="listasEncabezado"> 
+                    <ul> 
+                        <li> <a class="colorWhite" href="#Conferencia">La conferencia</a></li>
+                        <li> <a class="colorGris" href="#Oradores">Los oradores</a></li>
+                        <li> <a class="colorGris" href="#LugarFecha">El lugar y la fecha</a></li>
+                        <li> <a class="colorGris" href="#FormularioOrador">Conviertete en orador</a></li>
+                        <li> <a class="colorVerde" href="./pages/tickets.html">Comprar tickets</a></li>
                     </ul>
                  </nav>
             
@@ -33,7 +33,7 @@
        
         <main>
             <!--las sections siempre deben tener titulo-->
-            <section id="Conferencia">
+            <section id="Conferencia" class="parteConf">
 
                 <div class="infoFondo">
                     <h1>Conf Bs As</h1>
@@ -49,7 +49,9 @@
                
             </section>
 
+
             <section id="Oradores" class="oradores">
+
                 <h2><div>CONOCE A LOS</div>ORADORES</h2>
                 <div class="tarjetasMain">
                     <img src="./assets/img/steve.jpg" alt="Rostro de Steve Jobs">
@@ -95,12 +97,13 @@
 
             </section>
 
-            <section id="LugarFecha">
-                <div>
+
+            <section id="LugarFecha" class="lugarHono">
+                <div class="derYizq imagendeHono">
                     <img src="./assets/img/honolulu.jpg" alt="Foto de honolulu">
                 </div>
                 
-                <div>
+                <div class="derYizq infoHono">
                     <h2> Bs As - Octubre </h2>
                     <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales 
                         ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu 
@@ -111,14 +114,17 @@
                 
             </section>
 
-            <section id="FormularioOrador">
 
-                <h2><div>CONVIÉRTETE EN UN</div> ORADOR</h2>
+            <section id="FormularioOrador" class="formulario">
+
+                <h2><div class="sinnegrita">CONVIÉRTETE EN UN</div> ORADOR</h2>
+
                 <p>
                     Anótate como Orador para dar una charla ignite. Cuéntanos de qué quieres hablar!
                 </p>
+
                 <form action="./pages/404.html" method="get">
-                    <div> 
+                    <div class="nombreApellido"> 
                         <input type="text" id="name" name="name" placeholder="Nombre" required>
                         <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
                     </div>
@@ -126,10 +132,13 @@
                     <div>
                         <textarea name="comentario" id="comentario" cols="55" rows="5" placeholder="Sobre qué quieres hablar?" required></textarea>
                     </div>
+
                     <p>Recuerda incluir un titulo para tu charla </p>
+
                     <div>
                         <input type="submit" value="Enviar">
                     </div>
+
                 </form>
             </section>
             
@@ -147,7 +156,9 @@
                 <a class="links" href="#">Contáctanos</a>
                 <a class="links" href="#">Prensa</a>
                 <a class="links" href="#">Conferencias</a>
-                <a class="links" href="#">Términos y condiciones</a> 
+                <a class="links" href="#">Términos y condiciones</a>
+                <a class="links" href="#">Privacidad</a>
+                <a class="links" href="#">Estudiantes</a> 
             </div>
             
         </footer>
