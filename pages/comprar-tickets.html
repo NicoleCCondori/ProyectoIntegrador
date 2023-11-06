@@ -7,6 +7,7 @@
     <title>Proyecto integrador Front | Nicole Condori</title>
     <link rel="shortcut icon" href="../persona.icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/comprar-tickets.js"></script>
 
 </head>
 
@@ -53,59 +54,68 @@
             </div>
         </section>
 
-        <h2 cLass="titulo-gral">Venta <span> Valor de ticket $200 </spanx/h2>
+        
 
+        <div class="form-content">
+            <h2 cLass="titulo-gral"> Venta <span> Valor de ticket $200 </spanx/h2>
             <form action="">
-                    <div class="row gx-2">
-                        <div class="col-md mb-3">
-                            <input type="text" class="form-control" id="nombre" name="Nombre" placeholder="Nombre" required>
-                            <div class="invalid-feedback" id="mensajeErrorNombre">
-                                Ingrese su nombre
-                            </div>
-                        </div>
-                        <div class="col-md mb-3">
-                            <input type="text" class="form-control" id="apellido" name="Apellido" placeholder="Apellido" required>
-                            <div class="invalid-feedback" id="mensajeErrorApellido">
-                                Ingrese su apellido
-                            </div>
+                <div class="primerLinea">
+                    <div class="nomYape">
+                        <input type="text" class="form-control" id="nombre" name="Nombre" placeholder="Nombre" required>
+                        <div class="invalid-feedback" id="mensajeErrorNombre">
+                            Ingrese su nombre
                         </div>
                     </div>
-                    <div class="row">
-                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo" required>
+
+                    <div class="nomYape">
+                        <input type="text" class="form-control" id="apellido" name="Apellido" placeholder="Apellido" required>
+                        <div class="invalid-feedback" id="mensajeErrorApellido">
+                            Ingrese su apellido
+                        </div>
+                    </div>
+                </div>
+
+                <div class="correoo">
+                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo" required>
+                    <div class="invalid-feedback" id="mensajeErrorCorreo">
+                        Ingrese un correo electrónico
+                    </div>
+                </div>   
+
+                <div class="">
+                    <div class="cantCatg">
+                        <p>Cantidad</p>
+                        <input type="number" class="form-control" id="cantidad" name="Cantidad" placeholder="Cantidad" min="1" required>
                         <div class="invalid-feedback" id="mensajeErrorCorreo">
-                            Ingrese un correo electrónico
+                            Ingrese la cantidad de tickets requerida
                         </div>
-                    </div>                                                        
+                    </div>
+                    <div class="cantCatg">
+                        <p>Categoria</p>
+                        <select name="Categoria" id="categoria">
+                            <option value="invitado">Invitado</option>
+                            <option selected value="estudiante">Estudiante</option>
+                            <option value="trainee">Trainee</option>
+                            <option value="junior">Junior</option>
+                        </select>
+                    </div>
+                </div>  
+
+                <div class="totalAPagar">
+                    <p>Total a Pagar: $ <span id="totalAPagar"></span></p>
+                </div>
+
+                <div class="botones">
                     <div class="">
-                        <div class="">
-                            <p>Cantidad</p>
-                            <input type="number" class="form-control" id="cantidad" name="Cantidad" placeholder="Cantidad" min="1" required>
-                            <div class="invalid-feedback" id="mensajeErrorCorreo">
-                                Ingrese la cantidad de tickets requerida
-                            </div>
-                        </div>
-                        <div class="">
-                            <p>Categoria</p>
-                            <select name="Categoria" id="Categoria">
-                                <option value="invitado">Invitado</option>
-                                <option selected value="estudiante">Estudiante</option>
-                                <option value="trainee">Trainee</option>
-                                <option value="junior">Junior</option>
-                            </select>
-                        </div>
-                    </div>                   
-                    <div class="totalAPagar">
-                        <p>Total a Pagar: $ <span id="totalPago"></span></p>
+                        <input type="reset" value="Borrar" id="btnBorrar">     
                     </div>
                     <div class="">
-                        <div class="">
-                            <input type="reset" value="Borrar"  id="btnBorrar">     
-                        </div>
-                        <div class="">
-                            <input type="button" value="Resumen" id="btnResumen">
-                        </div>
-                    </div> 
-            </form>
+                        <input type="button" value="Resumen" id="btnResumen">
+                    </div>
+                </div> 
+            </form>  
+        </div>
+          
 
     </main>
 

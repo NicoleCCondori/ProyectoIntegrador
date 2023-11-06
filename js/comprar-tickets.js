@@ -5,21 +5,21 @@ let descuentoTrainee = 50;
 let descuentoJunior = 15;
 
 let nombre = document.getElementById("nombre");
-let errorNombre = document.getElementById("errorNombre");
+let mensajeErrorNombre = document.getElementById("mensajeErrorNombre");
 let apellido = document.getElementById("apellido");
-errorApellido = document.getElementById("errorApellido");
-let email = document.getElementById("email");
-let errorEmail = document.getElementById("errorEmail");
+let mensajeErrorApellido = document.getElementById("mensajeErrorApellido");
+let correo = document.getElementById("correo");
+let mensajeErrorCorreo = document.getElementById("mensajeErrorCorreo");
 let cantidad = document.getElementById("cantidad");
-let errorCantidad = document.getElementById("errorCantidad");
+let mensajeErrorCantidad = document.getElementById("mensajeErrorCantidad");
 let categoria = document.getElementById("categoria") ;
-let errorCategoria = document.getElementById("errorCategoria");
+let mensajeErrorCategoria = document.getElementById("mensajeErrorCategoria");
 
 const quitarClaseError = () => {
 
     let listaNodos = document.querySelectorAll(".form-control, .form-select");
     for(let i= 0; i < listaNodos.length; i++){
-        listaNodos[i].classList.remove("is-invalid");
+        listaNodos[i].classList.remove("invalid-feedback");
     }
     let listaNodosdiv = document.querySelectorAll(".invalid-feedback");
     for(let i= 0; i < listaNodosdiv.length; i++) {
@@ -32,20 +32,20 @@ const totalAPagar = () => {
     quitarClaseError();
 
     if (nombre.value === ""){
-        nombre.classList.add("is-invalid");
-        errorNombre.classList.add("mostrar");
+        nombre.classList.add("invalid-feedback");
+        mensajeENombre.classList.add("mostrar");
         nombre.focus();
         return;
         
     }if (apellido.value=== ""){
-        apellido.classList.add("is-invalid");
-        errorApellido.classList.add("mostrar");
+        apellido.classList.add("invalid-feedback");
+        mensajeErrorApellido.classList.add("mostrar");
         apellido.focus();
         return;
 
-    }if(email.value === ""){
-        email.classList.add("is-invalid");
-        errorEmail.classList.add("mostrar");
+    }if(correo.value === ""){
+        correo.classList.add("invalid-feedback");
+        mensajeErrorEmail.classList.add("mostrar");
         email.focus();
         return;
     
@@ -54,28 +54,28 @@ const totalAPagar = () => {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail);
     }
     if (!emailValido(email.value)){
-        email.classList.add("is-invalid");
-        errorEmail.classList.add("mostrar");
+        correo.classList.add("invalid-feedback");
+        mensajeErrorCorreo.classList.add("mostrar");
         email.focus();
         return;
     }
 
-    if ((cantidadTickets.value == 0) || (isNaN(cantidadTickets.value))) {
+    if ((cantidad.value == 0) || (isNaN(cantidad.value))) {
         alert("Por favor, ingresá correctamente cantidad de tickets.")
-        cantidadTickets.classList.add("is-invalid");
-        cantidadTickets.focus();
+        cantidad.classList.add("invalid-feedback");
+        cantidad.focus();
         return;
     }
 
     if(categoria.value == ""){
-        categoria.classList.add("is-invalid");
+        categoria.classList.add("invalid-feedback");
         categoria.focus();
         return;
     }
 
 //declaro una variable de tipo number
 
-    let totalValorTickets = (cantidadTickets.value) * valorBase;;
+    let totalValorTickets = (cantidad.value) * valorBase;;
 
     switch(categoria.value){
         case "0":

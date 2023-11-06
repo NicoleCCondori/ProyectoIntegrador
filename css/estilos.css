@@ -95,6 +95,9 @@
     margin-bottom: 35px;
    }
 }
+.infoFondo h1{
+    text-align: right;
+}
 .botonesFondo{
     margin-top: 30px;
     
@@ -233,7 +236,10 @@
     width: 400px;
     border: 1px solid rgb(131, 137, 160);
 }
-
+#pform{
+    text-align: left;
+    margin-left: 430px;
+}
 
 #comentario{
     width: 820px;
@@ -299,7 +305,7 @@ input#botonEnviar:hover{
 .target{
     width: 200px;
     height: 200px;
-    margin: 30px 10px;
+    margin: 10px 10px;
     background-color: white;
     border-radius: 0%;
     padding: 10px 4px;
@@ -347,8 +353,85 @@ input#botonEnviar:hover{
     transition: 1.5s;
 }
 
+/*--------------------Fomrulario-----------------------------*/
+.form-content{
+    text-align: center;
+    width: 640px;
+    margin: auto;
+    padding: 10px 10px;
+}
+.form-content h2{
+    font-size: 1.5rem;
+    
+}
 
-/* RESPONSIVE, CELULARES Y TABLETS*/
+.nomYape{
+    font-size: 1.1rem;
+    display: inline-block;
+    margin: 5px;
+}
+.nomYape input{
+    padding: 5px 10px;
+    width: 297px;
+}
+.correoo{
+    margin: 5px;
+}
+.correoo input{
+    padding: 5px 10px;
+    width: 297px;
+    display: flex;
+    justify-content: left;
+}
+.cantCatg{
+    display: inline-block;
+    margin: 5px;
+    
+}
+.cantCatg input{
+    padding: 5px 10px;
+    width: 297px;
+    justify-content: left;
+    margin:10px 1px;
+}
+.cantCatg p{
+    font-size: 1.1rem;
+    text-align: left;
+}
+.cantCatg select{
+    width: 200px;
+    padding: 5px;
+}
+.totalAPagar{
+    color: rgb(0,64,133);
+    background-color: rgb(204,229,255);
+    border-radius: 3px;
+    padding: 5px 10px;
+    text-align: left;
+    
+}
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.botones input{
+    font-size: 1.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(150,201,62);
+    color: white;
+    height: 40px;
+    width: 307px;
+    border-color: rgb(150,201,62);
+    margin: 30px 5px;
+    border-radius: 3px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.invalid-feedback{
+    display: none;
+}
+/*------------------------------- RESPONSIVE, CELULARES Y TABLETS*/
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     
     .oradores{
