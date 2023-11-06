@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto integrador Front | Nicole Condori</title>
+    <link rel="shortcut icon" href="../persona.icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+    <header class="encabezado">
+
+        <div class="logoTitulo">
+            <a href="https://www.google.com/" target="_blank"> <!--ANCLA me permite que la imagen me lleve a otra pagina web (ENLACE EXTERNO). Ej: Google y "target="_blank" sirve para que me abra Google en otra pestaña y no cierre mi página"-->
+                <img src="../assets/img/codoacodo.png" alt="Logo de codo a codo 4.0" height="100px">
+            </a>
+            <h2 class="tituloPincipal">Conf Bs As</h2>
+        </div>
+
+         <nav class="listasEncabezado"> 
+            <ul> 
+                <li> <a class="colorWhite" href="../index.html#Conferencia">La conferencia</a></li>
+                <li> <a class="colorGris" href="../index.html#Oradores">Los oradores</a></li>
+                <li> <a class="colorGris" href="../index.html#LugarFecha">El lugar y la fecha</a></li>
+                <li> <a class="colorGris" href="../index.html#FormularioOrador">Conviertete en orador</a></li>
+                <li> <a class="colorVerde" href="#">Comprar tickets</a></li>
+            </ul>
+         </nav>
+    
+    </header>
+    <main>
+        <section id="Cliente" class="cliente">
+            <div class="target" id="tEstudiante">
+               <h1>Estudiante</h1>
+               <h2>Tienen un descuento</h2>
+               <h1>80%</h1>
+               <h3>*presentar documentación</h3> 
+            </div>
+            <div class="target" id="tTrainee">
+                <h1>Trainee</h1>
+                <h2>Tienen un descuento</h2>
+                <h1>50%</h1>
+                <h3>*presentar documentación</h3> 
+            </div>
+            <div class="target" id="tJunior">
+                <h1>Junior</h1>
+                <h2>Tienen un descuento</h2>
+                <h1>15%</h1>
+                <h3>*presentar documentación</h3> 
+            </div>
+        </section>
+
+        <h2 cLass="titulo-gral">Venta <span> Valor de ticket $200 </spanx/h2>
+
+            <form action="">
+                    <div class="row gx-2">
+                        <div class="col-md mb-3">
+                            <input type="text" class="form-control" id="nombre" name="Nombre" placeholder="Nombre" required>
+                            <div class="invalid-feedback" id="mensajeErrorNombre">
+                                Ingrese su nombre
+                            </div>
+                        </div>
+                        <div class="col-md mb-3">
+                            <input type="text" class="form-control" id="apellido" name="Apellido" placeholder="Apellido" required>
+                            <div class="invalid-feedback" id="mensajeErrorApellido">
+                                Ingrese su apellido
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo" required>
+                        <div class="invalid-feedback" id="mensajeErrorCorreo">
+                            Ingrese un correo electrónico
+                        </div>
+                    </div>                                                        
+                    <div class="">
+                        <div class="">
+                            <p>Cantidad</p>
+                            <input type="number" class="form-control" id="cantidad" name="Cantidad" placeholder="Cantidad" min="1" required>
+                            <div class="invalid-feedback" id="mensajeErrorCorreo">
+                                Ingrese la cantidad de tickets requerida
+                            </div>
+                        </div>
+                        <div class="">
+                            <p>Categoria</p>
+                            <select name="Categoria" id="Categoria">
+                                <option value="invitado">Invitado</option>
+                                <option selected value="estudiante">Estudiante</option>
+                                <option value="trainee">Trainee</option>
+                                <option value="junior">Junior</option>
+                            </select>
+                        </div>
+                    </div>                   
+                    <div class="totalAPagar">
+                        <p>Total a Pagar: $ <span id="totalPago"></span></p>
+                    </div>
+                    <div class="">
+                        <div class="">
+                            <input type="reset" value="Borrar"  id="btnBorrar">     
+                        </div>
+                        <div class="">
+                            <input type="button" value="Resumen" id="btnResumen">
+                        </div>
+                    </div> 
+            </form>
+
+    </main>
+
+    <footer>
+        <div class="listasFooter ">
+            <a class="links" href="#"> Preguntas frecuentes</a>
+            <a class="links" href="#">Contáctanos</a>
+            <a class="links" href="#">Prensa</a>
+            <a class="links" href="#">Conferencias</a>
+            <a class="links" href="#">Términos y condiciones</a>
+            <a class="links" href="#">Privacidad</a>
+            <a class="links" href="#">Estudiantes</a> 
+        </div>
+        
+    </footer>
+
+</body>
+
+</html>

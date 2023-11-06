@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proyecto integrador Front | Nicole Condori</title>
         <link rel="shortcut icon" href="./persona.icon.png" type="image/x-icon">
+       
         <link rel="stylesheet" href="./css/estilos.css">
     </head>
     <body>
@@ -25,7 +26,7 @@
                         <li> <a class="colorGris" href="#Oradores">Los oradores</a></li>
                         <li> <a class="colorGris" href="#LugarFecha">El lugar y la fecha</a></li>
                         <li> <a class="colorGris" href="#FormularioOrador">Conviertete en orador</a></li>
-                        <li> <a class="colorVerde" href="./pages/tickets.html">Comprar tickets</a></li>
+                        <li> <a class="colorVerde" href="./pages/comprar-tickets.html">Comprar tickets</a></li>
                     </ul>
                  </nav>
             
@@ -37,18 +38,17 @@
 
                 <div class="infoFondo">
                     <h1>Conf Bs As</h1>
-                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, 
+                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y 
+                    experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, 
                     a otros estudiantes de Codo a Codo y los oradores del primer nivel que tenemos para ti. Te esperamos!
                     </p>
                 </div>
-
                 <div class="botonesFondo">
                     <a class="fondoVacio" href="">Quiero ser Orador</a>
-                    <a class="fondoVerde" href="">Comprar tickets</a>
+                    <a class="fondoVerde" href="./pages/comprar-tickets.html">Comprar tickets</a>
                 </div>
                
             </section>
-
 
             <section id="Oradores" class="oradores">
 
@@ -60,7 +60,8 @@
                         <h4 class="colorCeleste">React</h4>
                         <h3 class="tituloNombre">Steve Jobs</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio, quidem autem assumenda sint nesciunt, quasi vero accusamus in iste explicabo voluptatem similique 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio, quidem autem assumenda sint nesciunt, 
+                            quasi vero accusamus in iste explicabo voluptatem similique 
                             at blanditiis hic odio eveniet doloremque dolorum?
                         </p>  
                     </div>
@@ -74,8 +75,8 @@
                         <h4 class="colorCeleste"> React</h4>
                         <h3 class="tituloNombre">Bill Gates</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio, quidem autem assumenda sint nesciunt, quasi vero accusamus in iste 
-                            explicabo voluptatem similique at blanditiis hic odio eveniet doloremque dolorum? 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio, quidem autem assumenda sint nesciunt, 
+                            quasi vero accusamus in iste explicabo voluptatem similique at blanditiis hic odio eveniet doloremque dolorum? 
                         </p>  
                     </div>
 
@@ -88,8 +89,8 @@
                         <h4 class="colorRojo">Starups</h4>
                         <h3 class="tituloNombre">Ada Lovelace</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio, quidem autem assumenda sint nesciunt, quasi vero accusamus in iste 
-                            explicabo voluptatem similique at blanditiis hic odio eveniet doloremque dolorum? 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio, quidem autem assumenda sint nesciunt, 
+                            quasi vero accusamus in iste explicabo voluptatem similique at blanditiis hic odio eveniet doloremque dolorum? 
                         </p>  
                     </div>
                     
@@ -102,16 +103,15 @@
                 <div class="derYizq imagendeHono">
                     <img src="./assets/img/honolulu.jpg" alt="Foto de honolulu">
                 </div>
-                
                 <div class="derYizq infoHono">
                     <h2> Bs As - Octubre </h2>
-                    <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales 
-                        ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu 
+                    <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. 
+                        Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu 
+                        se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu 
                         han formado una ciudad- condado consolidada que cubre toda la ciudad (aproximadamente 600km^2 de superficie).
                     </p>
-                    <a href="https://www.visittheusa.mx/destination/honolulu"> Conocé más </a>
+                    <a  class="linkHono" href="https://www.visittheusa.mx/destination/honolulu"> Conocé más </a>
                 </div>
-                
             </section>
 
 
@@ -136,16 +136,16 @@
                     <p>Recuerda incluir un titulo para tu charla </p>
 
                     <div>
-                        <input type="submit" value="Enviar">
+                        <input type="submit" value="Enviar" id="botonEnviar">
                     </div>
 
                 </form>
             </section>
             
-            <section>
-                <h2>Encuéntrenos en: </h2>
+            <section id="mapaGoogle" class="mapa">
+                <h2>Encuéntrenos en : </h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.50406576683247!2d-58.37215308063851!3d-34.603339016603506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd05e21d49%3A0x6abff758614cce7e!2sC%C3%BAspide%20Libros!5e0!3m2!1ses!2sar!4v1696717306488!5m2!1ses!2sar" 
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
 
         </main>
